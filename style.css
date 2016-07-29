@@ -63,9 +63,14 @@
   /*height: 280px;*/
   background-color: #95A5A6;
   text-align: center;
-  border-radius: 10px;
-  border: 1px solid #F9CD34;
+  border-radius: 08px;
+  border: 1px solid #090708;
   /*padding-left: 300px;*/
+}
+
+#smaller{
+height: 100px;
+width: auto;
 }
 
 #year{
@@ -74,5 +79,14 @@
 }
 
 .background {
-  background-color: #2D2D2D;
+  background-color: #414141;
+}
+#blend{
+  background-color: #313131;
+}
+
+#notes{
+  padding-top: 20px;
+  font-size: 18px;
+  color: white;
 }
