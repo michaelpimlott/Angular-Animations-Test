@@ -7,12 +7,14 @@
     width:100%;
 }
 
-.page h1    { font-size:60px; }
+.page h1    { font-size:90px; }
 .page a     { margin-top:50px; }
 
-.page-home      { background:#00D0BC; color:#00907c; }
-.page-about     { background:#E59400; color:#a55400; }
-.page-contact   { background:#ffa6bb; color:#9e0000; }
+
+
+.page-home      {background-image: url('http://www.earlyblurs.com/fmsb/fmsb.jpg');  color:#F9CD34; }
+.page-about     {background-image: url('https://exegete77.files.wordpress.com/2011/06/p6-4stringquartet1.jpg'); color:#F9CD34; }
+.page-contact   {background-image: url('http://cdn.bluegrasstoday.com/wp-content/uploads/2010/12/smyser.jpg');  color:#F9CD34; }
 
 @keyframes rotateFall {
     0%      { transform: rotateZ(0deg); }
@@ -44,5 +46,19 @@
     to      { transform: translateY(0); }
 }
 
-.ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
-.ng-leave           { animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }
+.ng-enter           { z-index: 8888; }
+.ng-leave           { z-index: 9999; }
+
+.page-home.ng-enter         { animation: scaleUp 0.5s both ease-in; }
+.page-home.ng-leave         { transform-origin: 0% 0%; animation: rotateFall 1s both ease-in; }
+
+.page-about.ng-enter        { animation:slideInRight 0.5s both ease-in; }
+.page-about.ng-leave        { animation:slideOutLeft 0.5s both ease-in; }
+
+.page-contact.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }
+.page-contact.ng-enter      { animation:slideInUp 0.5s both ease-in; }
+
+/*#banjo {
+  width:100px;
+  height:auto;
+}*/
