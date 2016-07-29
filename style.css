@@ -1,92 +1,131 @@
-.page        {
-    bottom:0;
-    padding-top:200px;
-    position:absolute;
-    text-align:center;
-    top:0;
-    width:100%;
+.page {
+    bottom: 0;
+    padding-top: 200px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
 }
-
-.page h1    { font-size:90px; }
-.page a     { margin-top:50px; }
-
-
-
-.page-home      {background-image: url('http://www.earlyblurs.com/fmsb/fmsb.jpg');  color:#F9CD34; }
-.page-about     {background-image: url('https://exegete77.files.wordpress.com/2011/06/p6-4stringquartet1.jpg'); color:#F9CD34; }
-.page-contact   {background-image: url('http://cdn.bluegrasstoday.com/wp-content/uploads/2010/12/smyser.jpg');  color:white; }
-
+.page h1 {
+    font-size: 90px;
+}
+.page a {
+    margin-top: 50px;
+}
+.page-home {
+    background-image: url('http://www.earlyblurs.com/fmsb/fmsb.jpg');
+    color: #F9CD34;
+}
+.page-about {
+    background-image: url('https://exegete77.files.wordpress.com/2011/06/p6-4stringquartet1.jpg');
+    color: #F9CD34;
+}
+.page-contact {
+    background-image: url('http://cdn.bluegrasstoday.com/wp-content/uploads/2010/12/smyser.jpg');
+    color: white;
+}
 @keyframes rotateFall {
-    0%      { transform: rotateZ(0deg); }
-    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
-    40%     { transform: rotateZ(17deg); }
-    60%     { transform: rotateZ(16deg); }
-    100%    { transform: translateY(100%) rotateZ(17deg); }
+    0% {
+        transform: rotateZ(0deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+        animation-timing-function: ease-out;
+    }
+    40% {
+        transform: rotateZ(17deg);
+    }
+    60% {
+        transform: rotateZ(16deg);
+    }
+    100% {
+        transform: translateY(100%) rotateZ(17deg);
+    }
 }
-
 @keyframes slideOutLeft {
-    to      { transform: translateX(-100%); }
+    to {
+        transform: translateX(-100%);
+    }
 }
-
 @keyframes rotateOutNewspaper {
-    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+    to {
+        transform: translateZ(-3000px) rotateZ(360deg);
+        opacity: 0;
+    }
 }
-
 @keyframes scaleUp {
-    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+    from {
+        opacity: 0.3;
+        -webkit-transform: scale(0.8);
+    }
 }
-
 @keyframes slideInRight {
-    from    { transform:translateX(100%); }
-    to      { transform: translateX(0); }
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
-
 @keyframes slideInUp {
-    from    { transform:translateY(100%); }
-    to      { transform: translateY(0); }
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
-
-.ng-enter           { z-index: 8888; }
-.ng-leave           { z-index: 9999; }
-
-.page-home.ng-enter         { animation: scaleUp 0.5s both ease-in; }
-.page-home.ng-leave         { transform-origin: 0% 0%; animation: rotateFall 1s both ease-in; }
-
-.page-about.ng-enter        { animation:slideInRight 0.5s both ease-in; }
-.page-about.ng-leave        { animation:slideOutLeft 0.5s both ease-in; }
-
-.page-contact.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }
-.page-contact.ng-enter      { animation:slideInUp 0.5s both ease-in; }
-
-#contact{
-  /*width: 600px;*/
-  /*height: 280px;*/
-  background-color: #95A5A6;
-  text-align: center;
-  border-radius: 08px;
-  border: 1px solid #090708;
-  /*padding-left: 300px;*/
+.ng-enter {
+    z-index: 8888;
 }
-
-#smaller{
-height: 100px;
-width: auto;
+.ng-leave {
+    z-index: 9999;
 }
-
-#year{
-  color: white;
-  font-size: 60px;
+.page-home.ng-enter {
+    animation: scaleUp 0.5s both ease-in;
 }
-
+.page-home.ng-leave {
+    transform-origin: 0% 0%;
+    animation: rotateFall 1s both ease-in;
+}
+.page-about.ng-enter {
+    animation: slideInRight 0.5s both ease-in;
+}
+.page-about.ng-leave {
+    animation: slideOutLeft 0.5s both ease-in;
+}
+.page-contact.ng-leave {
+    transform-origin: 50% 50%;
+    animation: rotateOutNewspaper .5s both ease-in;
+}
+.page-contact.ng-enter {
+    animation: slideInUp 0.5s both ease-in;
+}
+#contact {
+    /*width: 600px;*/
+    /*height: 280px;*/
+    background-color: #95A5A6;
+    text-align: center;
+    border-radius: 08px;
+    border: 1px solid #090708;
+    /*padding-left: 300px;*/
+}
+#smaller {
+    height: 100px;
+    width: auto;
+}
+#year {
+    color: white;
+    font-size: 60px;
+}
 .background {
-  background-color: #414141;
+    background-color: #414141;
 }
-#blend{
-  background-color: #313131;
+#blend {
+    background-color: #313131;
 }
-
-#notes{
-  padding-top: 20px;
-  font-size: 18px;
-  color: white;
+#notes {
+    padding-top: 20px;
+    font-size: 18px;
+    color: white;
 }
